@@ -8,17 +8,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="bg-[#1A0B2E] w-full max-w-[1600px] pt-4 pb-4 pr-[200px] pl-[200px] flex justify-between text-center items-center relative">
+    <nav class="bg-[#1A0B2E] w-full max-w-[1600px] px-5 py-4 sm:pt-4 sm:pb-4 sm:pr-[200px] sm:pl-[200px] flex justify-between text-center items-center relative">
         <div>
             <h1 class="text-white font-semibold text-5xl">Tech<span class="bg-clip-text text-transparent bg-linear-30 from-[#F7E93F] via-[#FB09B4] via-51% to-[#9100F8]">Wave</span></h1>
         </div>
-        <div class="flex gap-8 text-[#FAFAFA] ">
+        <div class="hidden sm:flex sm:gap-8 text-[#FAFAFA] ">
             <h3>About</h3>
             <h3>Episodes</h3>
             <h3>Host</h3>
         </div>
         <div>
-            <button class="text-white w-[135px] h-11 cursor-pointer text-center bg-linear-30 from-[#F7E93F] via-[#FB09B4] via-51% to-[#9100F8] rounded-full font-semibold text-[16px]">Subscribe</button>
+            <button class="hidden sm:block text-white w-[135px] h-11 cursor-pointer text-center bg-linear-30 from-[#F7E93F] via-[#FB09B4] via-51% to-[#9100F8] rounded-full font-semibold text-[16px]">Subscribe</button>
+        </div>
+
+        <div>
+            <img src="./assets/hamburger-menu.png" class="sm:hidden w-4 h-3.5">
         </div>
     </nav>
 
@@ -48,13 +52,13 @@
             </div>
         </header>
     
-        <section class="bg-[#1A0B2E] w-full pr-48 pl-48 pb-28 text-center text-white flex justify-center items-center flex-col" >
+        <section class="bg-[#1A0B2E] w-full sm:pr-48 sm:pl-48 sm:pb-28 text-center text-white flex justify-center items-center flex-col" >
             <h1 class="font-bold text-5xl mb-4">About The Podcast</h1>
             <p class="text-[1rem] leading-7 max-w-4/5 mb-10 pb-16 border-b border-gray-600 text-[#FAFAFA]">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.<br>
     We break down complex topics into digestible insights, explore productivity strategies that actually work,
     and share stories of personal growth from industry leaders.<br><br>Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
     
-            <div class="pt-8 flex justify-evenly gap-20">
+            <div class="pt-8 pb-16 sm:pb-0 grid grid-cols-2 grid-rows-2 sm:flex justify-evenly gap-20">
                 <div>
                     <h1 class="text-[#00FF88] text-5xl font-black mb-4">150K+</h1>
                     <p class="text-[0.75rem] text-[#FAFAFA]">MONTHLY LISTENERS</p>
@@ -74,25 +78,25 @@
             </div>
         </section>
     
-        <section class="bg-[#230E3D] pt-28 pb-28 pr-48 pl-48 text-white">
-            <h1 class="text-center font-bold text-5xl pb-10">Why Choose TechWave</h1>
-            <div class="grid grid-cols-3 grid-rows-3 gap-7">
-                <div class="row-span-2 bg-[#351165] flex flex-col gap-4 p-10 rounded-[40px] justify-center">
+        <section class="bg-[#230E3D] px-5 py-10 sm:pt-28 sm:pb-28 sm:pr-48 sm:pl-48 text-white">
+            <h1 class="text-center font-bold text-4xl sm:text-5xl pb-10">Why Choose TechWave</h1>
+            <div class="grid sm:grid-cols-3 sm:grid-rows-3 gap-7">
+                <div class="sm:row-span-2 bg-[#351165] flex flex-col gap-4 p-10 rounded-[40px] justify-center">
                     <img src="./assets/headphone.png" class="max-w-14 max-h-14">
                     <h3 class="font-bold text-2xl">Premium Audio Quality</h3>
                     <p class="font-light text-[#FAFAFA]">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
                 </div>
-                <div class="col-span-2 bg-[#351165] flex flex-col gap-4 p-10 rounded-[40px] justify-center">
+                <div class="sm:col-span-2 bg-[#351165] flex flex-col gap-4 p-10 rounded-[40px] justify-center">
                     <img src="./assets/device.png" class="max-w-10 max-h-14">
                     <h3 class="font-bold text-2xl">Mobile Friendly</h3>
                     <p class="font-light text-[#FAFAFA]">Listen on the go with seamless mobile experience and offline downloads.</p>
                 </div>
-                <div class="col-span-2 bg-[#351165] flex flex-col gap-4 p-10 rounded-[40px] justify-center">
+                <div class="sm:col-span-2 bg-[#351165] flex flex-col gap-4 p-10 rounded-[40px] justify-center">
                     <img src="./assets/location.png" class="max-w-14 max-h-14">
                     <h3 class="font-bold text-2xl">Global Community</h3>
                     <p class="font-light text-[#FAFAFA]">Connect with tech enthusiasts from over 120 countries worldwide.</p>
                 </div>
-                <div class="col-span-2 bg-[#351165] flex flex-col gap-4 p-10 rounded-[40px] justify-center">
+                <div class="sm:col-span-2 bg-[#351165] flex flex-col gap-4 p-10 rounded-[40px] justify-center">
                     <!-- <img src="./assets/bolt.png" class="max-w-14 max-h-14"> -->
                     <div class="w-14 h-14 bg-linear-30 from-[#F7E93F] via-[#FB09B4] to-[#9100F8] mask-[url('./assets/bolt.png')] mask-contain mask-no-repeat mask-center"></div>
                     <h3 class="font-bold text-2xl">Exclusive Interviews</h3>
@@ -106,10 +110,10 @@
             </div>
         </section>
     
-        <section class="pt-28 pb-28 pr-48 pl-48 bg-[#1A0B2E] text-white">
-            <div class="pb-28">
+        <section class="px-5 py-10 sm:pt-28 sm:pb-28 sm:pr-48 sm:pl-48 bg-[#1A0B2E] text-white">
+            <div class="pb-20 sm:pb-28">
                 <h1 class="font-bold text-5xl text-center pb-10">Featured Episodes</h1>
-                <div class="grid grid-cols-3 gap-7">
+                <div class="grid sm:grid-cols-3 gap-7">
                     <div class="rounded-3xl bg-[#250D44]">
                         <iframe class="rounded-t-3xl border-none w-full" src="https://www.youtube.com/embed/dv9q7Ema40k?si=NjVUlPyEIug-bL37" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <div class="p-6 flex flex-col gap-3">
@@ -148,14 +152,14 @@
     
             <div>
                 <h1 class="text-center font-bold text-5xl pb-10">Meet The Host</h1>
-                <div class="bg-[#250D44] rounded-3xl p-10 flex gap-6 items-center justify-start">
+                <div class="bg-[#250D44] rounded-3xl p-10 flex flex-col sm:flex-row gap-6 items-center justify-start">
                     <div>
                         <img src="./assets/host.png" class="max-w-48 max-h-48">
                     </div>
                     <div>
-                        <h1 class="font-bold text-3xl">Alex Kumar</h1>
-                        <p class="font-light text-[1rem] pt-4 pb-4 text-[#FAFAFA]">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
-                        <div class="flex gap-2">
+                        <h1 class="font-bold text-3xl text-center sm:text-left">Alex Kumar</h1>
+                        <p class="font-light text-[1rem] pt-4 pb-4 text-[#FAFAFA] text-center sm:text-left">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
+                        <div class="flex gap-2 justify-center sm:justify-start">
                             <div class="border rounded-full h-10 w-10 border-gray-500 flex items-center justify-center">
                                 <img src="./assets/linkedin.png" class="p-2.5">
                             </div>
@@ -175,25 +179,29 @@
         </section>
     </main>
 
-    <footer class="w-full max-w-[1600px] bg-[url('../assets/footer-bg.png')] bg-cover bg-center text-center p-28 flex flex-col gap-8">
+    <footer class="w-full max-w-[1600px] bg-[url('../assets/footer-bg.png')] bg-cover bg-center text-center p-12 flex flex-col gap-8 items-center">
         <h1 class="text-white font-bold text-7xl">Tech<span class="bg-clip-text text-transparent bg-linear-30 from-[#F7E93F] via-[#FB09B4] via-51% to-[#9100F8]">Wave</span></h1>
         
-        <div class="flex justify-center gap-10">
-            <div class="flex items-center gap-2">
-                <img src="./assets/spotify.png" class="w-5 h-5">
-                <p class="text-[#FAFAFA]">Spotify</p>
+        <div class="flex flex-col justify-center gap-6 sm:gap-10">
+            <div class="flex justify-center gap-4">
+                <div class="flex items-center gap-2">
+                    <img src="./assets/spotify.png" class="w-5 h-5">
+                    <p class="text-[#FAFAFA]">Spotify</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="./assets/apple-podcast.png" class="w-5 h-5">
+                    <p class="text-[#FAFAFA]">Apple Podcasts</p>
+                </div>
             </div>
-            <div class="flex items-center gap-2">
-                <img src="./assets/apple-podcast.png" class="w-5 h-5">
-                <p class="text-[#FAFAFA]">Apple Podcasts</p>
-            </div>
-            <div class="flex items-center gap-2">
-                <img src="./assets/youtube-podcast.png" class="w-5 h-5">
-                <p class="text-[#FAFAFA]">Youtube</p>
-            </div>
-            <div class="flex items-center gap-2">
-                <img src="./assets/twitter.png" class="w-5 h-5">
-                <p class="text-[#FAFAFA]">Twitter</p>
+            <div class="flex justify-center gap-4">
+                <div class="flex items-center gap-2">
+                    <img src="./assets/youtube-podcast.png" class="w-5 h-5">
+                    <p class="text-[#FAFAFA]">Youtube</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="./assets/twitter.png" class="w-5 h-5">
+                    <p class="text-[#FAFAFA]">Twitter</p>
+                </div>
             </div>
         </div>
 
